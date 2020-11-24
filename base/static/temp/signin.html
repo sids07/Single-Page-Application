@@ -1,0 +1,20 @@
+
+ <div class="container">
+<form id="login-form" name="log" action="http://127.0.0.1:8000/api/signin/" method="POST" >
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <label for="inputUserName" class="sr-only">Username</label>
+    <input name="uid" type="userName" class="form-control" id="inputUserName" placeholder="Username" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+    <input name="passed" type="password" class="form-control" id="inputPassword"placeholder="Password" required>
+
+  <div class="checkbox mb-3">
+
+    <label ><input type="checkbox" value="remember-me"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+
+  <a href="#/signup">Don't have account. Sign Up.</a>
+</form>
+
+
+</div>

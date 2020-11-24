@@ -1,0 +1,62 @@
+{%load static%}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routing examples</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+
+
+<style>
+   html,body{
+        width: 100%;
+    }
+</style>
+<template id="unsigned">
+    <div class=" d-flex w-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+
+      <h3 class="masthead-brand">Great Bear Technologies</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link" href="#/" data-link>Home</a>
+        <a class="nav-link" href="#/post" data-link>Posts</a>
+        <a class="nav-link" href="#/signin" data-link>Sign In</a>
+        <a class="nav-link" href="#/signup" data-link>Sign Up</a>
+      </nav>
+  </header>
+ </div>
+
+</template>
+<template id="signed">
+    <div class=" d-flex w-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+
+      <h3 class="masthead-brand">Great Bear Technologies</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link" href="#/" data-link>Home</a>
+        <a class="nav-link" href="#/write" data-link>Write</a>
+        <a class="nav-link" href="#/post" data-link>Posts</a>
+        <a class="nav-link" href="#/logout" data-link>Log Out</a>
+      </nav>
+  </header>
+ </div>
+
+</template>
+<div class="container">
+    <div id="navRoot">
+
+    </div>
+
+    <div id="appRoot">
+
+    </div>
+</div>
+    <script src="{% static 'main.js' %}"></script>
+</body>
+
+</html>
